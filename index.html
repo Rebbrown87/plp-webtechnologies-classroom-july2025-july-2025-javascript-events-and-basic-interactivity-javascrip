@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quantum Playground</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <h1><i class="fas fa-atom"></i> Quantum Playground</h1>
+    <button id="themeToggle"><i class="fas fa-adjust"></i> Toggle Light/Dark Mode</button>
+  </header>
+
+  <p class="book-link">
+    📘 Explore quantum computing deeper with this free book:  
+    <a href="https://www.academia.edu/121379893/QUANTUM_COMPUTING" target="_blank">
+      Quantum Computing by Dr. Neeraj Kumar Misra <i class="fas fa-book-open"></i>
+    </a>
+  </p>
+
+  <p class="book-link">
+    🔐 Learn how quantum computing intersects with cybersecurity:  
+    <a href="https://www.academia.edu/130021360/Quantum_computing" target="_blank">
+      Quantum Computing and Cyber Security by Likalani Shadrack <i class="fas fa-shield-alt"></i>
+    </a>
+  </p>
+
+  <main class="main-layout">
+    <section id="interactiveArea">
+      <section id="qubitCounter">
+        <h2>Qubit Counter</h2>
+        <button id="incrementQubit"><i class="fas fa-plus-circle"></i> Add Qubit</button>
+        <button id="resetQubit"><i class="fas fa-redo"></i> Reset</button>
+        <p>Qubits: <span id="qubitDisplay">0</span></p>
+      </section>
+
+      <section id="faq">
+        <h2>Quantum FAQ</h2>
+        <div class="faq-item">
+          <h3 class="faq-question">What is superposition?</h3>
+          <p class="faq-answer hidden">Superposition is the ability of a quantum system to be in multiple states at once.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">What is entanglement?</h3>
+          <p class="faq-answer hidden">Entanglement is a quantum phenomenon where particles become linked and share states instantly.</p>
+        </div>
+      </section>
+    </section>
+
+    <aside id="signupForm">
+      <h2>Join the Quantum Network</h2>
+      <form id="form">
+        <label>Name: <input type="text" id="name" /></label>
+        <label>Email: <input type="email" id="email" /></label>
+        <label>Password: <input type="password" id="password" /></label>
+        <button type="submit"><i class="fas fa-user-plus"></i> Sign Up</button>
+      </form>
+      <div id="formFeedback"></div>
+    </aside>
+  </main>
+
+  <footer>
+    <p>🔌 Powered by Likalani Shadrack</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
